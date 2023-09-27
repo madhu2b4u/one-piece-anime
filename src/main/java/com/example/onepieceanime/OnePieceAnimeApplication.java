@@ -16,5 +16,9 @@ public class OnePieceAnimeApplication {
         SpringApplication.run(OnePieceAnimeApplication.class, args);
     }
 
+    @GetMapping()
+    public String sayHello() {
+        return String.format("Welcome to the website");
+    }
 
 }
